@@ -35,3 +35,14 @@ Shery.textAnimate(".text-target" /* Element to target.*/, {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 0.1,
 });
+
+ // Initialize Lenis
+	const lenis = new Lenis();
+	
+	// Use requestAnimationFrame to continuously update the scroll
+	function raf(time) {
+	  lenis.raf(time);
+	  requestAnimationFrame(raf);
+	}
+	
+	requestAnimationFrame(raf);
