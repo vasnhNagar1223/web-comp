@@ -1,0 +1,121 @@
+.nav {
+  background-color: #1e1f24;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: white;
+}
+.navSideBar {
+  display: none;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 3vw;
+}
+.nav ul a {
+  text-decoration: none;
+  color: white;
+}
+.nav ul div {
+  font-size: 1vw;
+}
+.LlogoLink {
+  width: 40vw;
+}
+
+.Llogo {
+  padding: 0 3vw;
+  width: 70%;
+  margin-left: -10%;
+}
+.logo {
+  display: none;
+}
+.nav i {
+  display: none;
+}
+.logo {
+  display: none;
+}
+.left h2 {
+  margin-top: -0.4vw;
+  font-family: Cinzel;
+  font-size: 2.3vw;
+  font-weight: 100;
+  z-index: 10;
+}
+.left button {
+  z-index: 10;
+}
+
+.right img {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 60px;
+  }
+  .navSideBar {
+    display: none;
+  }
+  .Llogo {
+    display: none;
+  }
+  .nav ul {
+    display: none;
+  }
+  .LlogoLink {
+    display: none;
+  }
+  .logo {
+    display: initial;
+    height: 70%;
+    margin-left: 4vw;
+  }
+
+  .nav i {
+    font-size: 6vw;
+    display: initial;
+    padding: 8vw;
+  }
+  .content {
+    width: 100%;
+    height: calc(100% - 60px);
+    justify-content: start;
+  }
+  .left button {
+    margin-top: 10vw;
+  }
+  .content h1 {
+    font-size: 11vw;
+  }
+  .content h2 {
+    font-size: 4.6vw;
+  }
+
+  .right img {
+    display: initial;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .right {
+    margin-top: 4vh;
+  }
+
+  .left {
+    margin-top: 17vh;
+
+    display: flex;
+    position: relative;
+  }
+  .P1floates {
+    display: none;
+  }
+}
