@@ -1,0 +1,223 @@
+.cursorFollower {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1000;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: transform linear;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: background-image ease 0.1s;
+  object-fit: cover;
+}
+
+/* Loader Styles */
+.loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url("https://i.pinimg.com/originals/17/44/1e/17441ef826077986a1ee601f45e6bdfa.gif")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #fff;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.welcomeheading {
+  background-image: url("https://i.pinimg.com/originals/3a/49/63/3a4963ce7cd31ab7f008844a259dd9ef.gif");
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px black; /* Text border */
+
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: right;
+}
+
+.typingEffect {
+  color: black;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: #001f3f;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "S";
+  }
+  2.2791%,
+  25.0698% {
+    content: "St";
+  }
+  3.4186%,
+  23.9302% {
+    content: "Sta";
+  }
+  4.5581%,
+  22.7907% {
+    content: "Stay";
+  }
+  5.6977%,
+  21.6512% {
+    content: "Stay H";
+  }
+  6.8372%,
+  20.5116% {
+    content: "Stay He";
+  }
+  7.9767%,
+  19.3721% {
+    content: "Stay Hea";
+  }
+  9.1163%,
+  18.2326% {
+    content: "Stay Heal";
+  }
+  10.2558%,
+  17.0930% {
+    content: "Stay Healt";
+  }
+  11.3953%,
+  15.9535% {
+    content: "Stay Health";
+  }
+  12.5349%,
+  14.8140% {
+    content: "Stay Healthy";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "L";
+  }
+  33.0465%,
+  49.0000% {
+    content: "Li";
+  }
+  34.1860%,
+  47.8605% {
+    content: "Liv";
+  }
+  35.3256%,
+  46.7209% {
+    content: "Live";
+  }
+  36.4651%,
+  45.5814% {
+    content: "Live F";
+  }
+  37.6047%,
+  44.4419% {
+    content: "Live Fu";
+  }
+  38.7442%,
+  43.3023% {
+    content: "Live Ful";
+  }
+  39.8837%,
+  42.1628% {
+    content: "Live Full";
+  }
+  41.0233%,
+  41.0233% {
+    content: "Live Fully";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+  55.8372%,
+  74.0698% {
+    content: "F";
+  }
+  56.9767%,
+  72.9302% {
+    content: "Fe";
+  }
+  58.1163%,
+  71.7907% {
+    content: "Fee";
+  }
+  59.2558%,
+  70.6512% {
+    content: "Feel";
+  }
+  60.3953%,
+  69.5116% {
+    content: "Feel G";
+  }
+  61.5349%,
+  68.3721% {
+    content: "Feel Gr";
+  }
+  62.6744%,
+  67.2326% {
+    content: "Feel Gre";
+  }
+  63.8140%,
+  66.0930% {
+    content: "Feel Grea";
+  }
+  64.9535%,
+  64.9535% {
+    content: "Feel Great";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}

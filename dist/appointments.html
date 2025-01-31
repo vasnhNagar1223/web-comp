@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/productivity.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <a class="LlogoLink" href="index.html">
+        <div class="flex items-center space-x-2 ml-[1.5vw]" id="el-u06lf9ds">
+          <img
+            src="https://avatar.iran.liara.run/public"
+            alt="Logo"
+            class="w-10 h-10 rounded-lg transition-opacity duration-300 opacity-100"
+            loading="lazy"
+            id="el-yr1bpf6j"
+          />
+          <span class="text-lg font-semibold" id="el-46gjzbxm"
+            >SmartHealth</span
+          >
+        </div>
+      </a>
+      <img class="logo" src="Icons/image (1).png" alt="hi" />
+      <ul>
+        <a href="smarthealth.html"><div>Home</div></a>
+        <a href="appointments.html" class="navLink"><div>Appointment</div></a>
+        <a href="report.html"> <div>Reports</div> </a>
+        <a href="setting.html"><div>Settings</div></a>
+      </ul>
+      <i onclick="handlesidebarButton()" class="ri-menu-line"></i>
+    </div>
+    <div
+      class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw] bg-black"
+    >
+      <i
+        onclick="handleCloseButtonclick()"
+        class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+      ></i>
+      <a
+        class="border-t py-[6vw] w-full flex justify-center"
+        href="smarthealth.html"
+        ><div>Home</div></a
+      >
+      <a
+        class="border-t py-[6vw] w-full flex justify-center"
+        href="appointments.html"
+        class="navLink"
+        ><div>Appointment</div></a
+      >
+      <a
+        class="border-t py-[6vw] w-full flex justify-center"
+        href="report.html"
+      >
+        <div>Reports</div>
+      </a>
+      <a
+        class="border-t py-[6vw] w-full flex justify-center"
+        href="setting.html"
+        ><div>Settings</div></a
+      >
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="el-rfrvt1bx">
+      <div class="lg:col-span-2" id="el-02ek58px">
+        <div
+          class="border border-neutral-200/30 rounded-xl p-6 hover:border-neutral-200/40 transition-all"
+          id="el-8d2lvofv"
+        >
+          <div class="flex justify-between items-center mb-6" id="el-3aoiwx6b">
+            <h3 class="text-lg font-semibold" id="el-6h80wrmo">
+              Upcoming Consultations
+            </h3>
+            <button class="text-blue-500 hover:text-blue-600" id="el-sufo3nbf">
+              View All
+            </button>
+          </div>
+          <div class="space-y-4" id="el-cgtm047b">
+            <!-- Active Consultation -->
+            <div
+              class="bg-blue-50 p-4 rounded-lg border border-blue-100"
+              id="el-uw5o4snp"
+            >
+              <div class="flex items-center justify-between" id="el-2vm56bdx">
+                <div class="flex items-center space-x-4" id="el-vaehb331">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center"
+                    id="el-c4jgfbkz"
+                  >
+                    <svg
+                      class="w-6 h-6 text-blue-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="el-tak5y6aa"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        id="el-1nzpehk5"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div id="el-8ujgsrxn">
+                    <h4 class="font-semibold" id="el-34cafu6a">
+                      Dr. Priya Sharma
+                    </h4>
+                    <p class="text-sm text-gray-600" id="el-gnmid2s5">
+                      Cardiologist
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+                  id="el-t4kpo3je"
+                >
+                  Join Now
+                </button>
+              </div>
+              <div
+                class="mt-4 flex items-center justify-between text-sm"
+                id="el-egwqlpar"
+              >
+                <span class="text-gray-600" id="el-wjtdql1r"
+                  >Today, 2:00 PM</span
+                >
+                <span class="text-blue-500" id="el-fo2sbbrg"
+                  >Starting in 5 minutes</span
+                >
+              </div>
+            </div>
+
+            <!-- Upcoming Consultations -->
+            <div
+              class="p-4 rounded-lg border border-neutral-200/30"
+              id="el-2eyun5w0"
+            >
+              <div class="flex items-center justify-between" id="el-h80oi3ag">
+                <div class="flex items-center space-x-4" id="el-r0l7zu6i">
+                  <div
+                    class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center"
+                    id="el-z3g0nzqk"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="el-5ef0er1t"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        id="el-wc0r4lod"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div id="el-aolsp15s">
+                    <h4 class="font-semibold" id="el-wlhjksdb">
+                      Dr. Rajesh Kumar
+                    </h4>
+                    <p class="text-sm text-gray-600" id="el-whktv51d">
+                      General Physician
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="text-gray-500 hover:text-gray-600"
+                  id="el-u1wk0m4r"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    id="el-glcf7moz"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                      id="el-x5zvyht3"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="mt-4 flex items-center justify-between text-sm"
+                id="el-2ej3e8yq"
+              >
+                <span class="text-gray-600" id="el-k64iw1zz"
+                  >Tomorrow, 10:30 AM</span
+                >
+                <span class="text-gray-500" id="el-ukq80rvf">In 18 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div
+        class="border border-neutral-200/30 rounded-xl p-6 hover:border-neutral-200/40 transition-all"
+        id="el-yans2g3b"
+      >
+        <h3 class="text-lg font-semibold mb-6" id="el-j2d9mb0s">
+          Quick Actions
+        </h3>
+        <div class="space-y-4" id="el-lufgqed2">
+          <button
+            class="w-full flex items-center p-4 border border-neutral-200/30 rounded-lg hover:bg-blue-50 transition-all"
+            id="el-k3jlxu8s"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center"
+              id="el-aolqnrii"
+            >
+              <svg
+                class="w-5 h-5 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="el-5n70efiw"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4v16m8-8H4"
+                  id="el-2b3neyoi"
+                ></path>
+              </svg>
+            </div>
+            <span class="ml-4" id="el-7w6e0waa">Schedule New Consultation</span>
+          </button>
+          <button
+            class="w-full flex items-center p-4 border border-neutral-200/30 rounded-lg hover:bg-purple-50 transition-all"
+            id="el-szznt6pa"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center"
+              id="el-mncivv8m"
+            >
+              <svg
+                class="w-5 h-5 text-purple-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="el-q83p6s8v"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  id="el-4ojwtocl"
+                ></path>
+              </svg>
+            </div>
+            <span class="ml-4" id="el-rkx5963f"
+              >Start Emergency Consultation</span
+            >
+          </button>
+          <button
+            class="w-full flex items-center p-4 border border-neutral-200/30 rounded-lg hover:bg-green-50 transition-all"
+            id="el-ngip3zom"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center"
+              id="el-z9bgx1ro"
+            >
+              <svg
+                class="w-5 h-5 text-green-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="el-5k8yembb"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  id="el-xhb72s5w"
+                ></path>
+              </svg>
+            </div>
+            <span class="ml-4" id="el-rre71wx9">View Medical History</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Available Doctors -->
+    <div
+      class="border border-neutral-200/30 rounded-xl p-6 hover:border-neutral-200/40 transition-all"
+      id="el-8t6e1lkw"
+    >
+      <div class="flex justify-between items-center mb-6" id="el-lowkch88">
+        <h3 class="text-lg font-semibold" id="el-fixek4g2">
+          Available Doctors
+        </h3>
+        <div class="flex space-x-4" id="el-h7sh9zjo">
+          <button
+            class="px-3 py-1 text-sm bg-blue-50 text-blue-600 rounded-full"
+            id="el-8km3xwyn"
+          >
+            All
+          </button>
+          <button
+            class="px-3 py-1 text-sm text-gray-500 rounded-full hover:bg-gray-50"
+            id="el-ao12cv3j"
+          >
+            Cardiologists
+          </button>
+          <button
+            class="px-3 py-1 text-sm text-gray-500 rounded-full hover:bg-gray-50"
+            id="el-220z3ox9"
+          >
+            Physicians
+          </button>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        id="el-qzw68npl"
+      >
+        <div
+          class="p-4 border border-neutral-200/30 rounded-lg hover:border-blue-200 transition-all"
+          id="el-nbfm8nm0"
+        >
+          <div class="flex items-center space-x-4" id="el-xbohlkyy">
+            <img
+              src="https://thumbs.dreamstime.com/b/woman-doctor-2426011.jpg"
+              alt="Doctor"
+              class="w-16 h-16 rounded-full transition-opacity duration-300 opacity-100 object-contain"
+              loading="lazy"
+              id="el-7agkcakf"
+            />
+            <div id="el-qxgbcox7">
+              <h4 class="font-semibold" id="el-23lqewdy">Dr. Kavita Patel</h4>
+              <p class="text-sm text-gray-600" id="el-psevhrdu">Cardiologist</p>
+              <div class="flex items-center mt-1" id="el-otloesbk">
+                <svg
+                  class="w-4 h-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="el-icxb73zx"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    id="el-x8nhjys5"
+                  ></path>
+                </svg>
+                <span class="text-sm text-gray-600 ml-1" id="el-gsyzbo4w"
+                  >4.9</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between" id="el-kyq9tkvn">
+            <span class="text-sm text-gray-600" id="el-4wzag3ty"
+              >Available at 3:00 PM</span
+            >
+            <button
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              id="el-8if7td3t"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="p-4 border border-neutral-200/30 rounded-lg hover:border-blue-200 transition-all"
+          id="el-euph39yr"
+        >
+          <div class="flex items-center space-x-4" id="el-qg1heogx">
+            <img
+              src="https://thumbs.dreamstime.com/b/woman-doctor-2426012.jpg"
+              alt="Doctor"
+              class="w-16 h-16 rounded-full transition-opacity duration-300 opacity-100 object-contain"
+              loading="lazy"
+              id="el-4hngg5s9"
+            />
+            <div id="el-7njl359m">
+              <h4 class="font-semibold" id="el-za1102hs">Dr. Meera Singh</h4>
+              <p class="text-sm text-gray-600" id="el-kbqoa11n">Neurologist</p>
+              <div class="flex items-center mt-1" id="el-38pz42ln">
+                <svg
+                  class="w-4 h-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="el-hq2nvw19"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    id="el-keu9bx58"
+                  ></path>
+                </svg>
+                <span class="text-sm text-gray-600 ml-1" id="el-fxg4y6e0"
+                  >4.8</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between" id="el-v06e71cd">
+            <span class="text-sm text-gray-600" id="el-r71qzk67"
+              >Available at 4:30 PM</span
+            >
+            <button
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              id="el-uea3htf7"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+        <div
+          class="p-4 border border-neutral-200/30 rounded-lg hover:border-blue-200 transition-all"
+          id="el-euph39yr"
+        >
+          <div class="flex items-center space-x-4" id="el-qg1heogx">
+            <img
+              src="https://thumbs.dreamstime.com/b/woman-doctor-square-22962653.jpg"
+              alt="Doctor"
+              class="w-16 h-16 rounded-full transition-opacity duration-300 opacity-100 object-contain"
+              loading="lazy"
+              id="el-4hngg5s9"
+            />
+            <div id="el-7njl359m">
+              <h4 class="font-semibold" id="el-za1102hs">
+                Dr. Kusha Singh bassi
+              </h4>
+              <p class="text-sm text-gray-600" id="el-kbqoa11n">Neurologist</p>
+              <div class="flex items-center mt-1" id="el-38pz42ln">
+                <svg
+                  class="w-4 h-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="el-hq2nvw19"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    id="el-keu9bx58"
+                  ></path>
+                </svg>
+                <span class="text-sm text-gray-600 ml-1" id="el-fxg4y6e0"
+                  >4.2</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between" id="el-v06e71cd">
+            <span class="text-sm text-gray-600" id="el-r71qzk67"
+              >Available at :30 PM</span
+            >
+            <button
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              id="el-uea3htf7"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/nav.js"></script>
+  </body>
+</html>
