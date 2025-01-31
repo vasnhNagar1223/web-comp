@@ -1117,6 +1117,10 @@ video {
   overflow-y: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1932,6 +1936,10 @@ video {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:m-0 {
+    margin: 0px;
+  }
+
   .max-sm\:mt-\[8vw\] {
     margin-top: 8vw;
   }
@@ -1944,8 +1952,32 @@ video {
     margin-top: 15vw;
   }
 
+  .max-sm\:mb-\[10vw\] {
+    margin-bottom: 10vw;
+  }
+
+  .max-sm\:mb-\[30vw\] {
+    margin-bottom: 30vw;
+  }
+
+  .max-sm\:mb-\[40vw\] {
+    margin-bottom: 40vw;
+  }
+
+  .max-sm\:mb-\[60vw\] {
+    margin-bottom: 60vw;
+  }
+
   .max-sm\:hidden {
     display: none;
+  }
+
+  .max-sm\:h-\[40vw\] {
+    height: 40vw;
+  }
+
+  .max-sm\:h-\[200vw\] {
+    height: 200vw;
   }
 
   .max-sm\:w-auto {
@@ -1954,6 +1986,26 @@ video {
 
   .max-sm\:flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .max-sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .max-sm\:p-\[200vw\] {
+    padding: 200vw;
+  }
+
+  .max-sm\:p-\[20vw\] {
+    padding: 20vw;
+  }
+
+  .max-sm\:p-\[23vw\] {
+    padding: 23vw;
+  }
+
+  .max-sm\:p-\[30vw\] {
+    padding: 30vw;
   }
 
   .max-sm\:text-\[15vw\] {
@@ -1982,6 +2034,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-\[2vw\] {
+    margin-right: 2vw;
+  }
+
+  .sm\:mb-\[2vw\] {
+    margin-bottom: 2vw;
+  }
+
   .sm\:hidden {
     display: none;
   }
