@@ -66,4 +66,4 @@ setTimeout(() => {
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
   }, 800);
-}, 1700);
+}, 1690);

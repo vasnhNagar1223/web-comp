@@ -35,20 +35,18 @@
 }
 
 .welcomeheading {
-  background-image: url("https://i.pinimg.com/originals/3a/49/63/3a4963ce7cd31ab7f008844a259dd9ef.gif");
+  background-image: url("https://i.pinimg.com/originals/62/26/43/6226435516042edfe1a4514a44e2023a.gif");
   -webkit-background-clip: text;
-  -webkit-text-stroke: 1px black; /* Text border */
+  -webkit-text-stroke: 0.5px rgb(0, 47, 255); /* Text border */
 
   -webkit-text-fill-color: transparent;
   background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 
 .typingEffect {
-  color: black;
   text-align: left;
   font-family: Lato, sans-serif;
-  font-weight: 700;
 }
 
 h1 {
